@@ -34,6 +34,7 @@ PRODUCT_SOONG_NAMESPACES += \
     device/google/wahoo \
     vendor/google/camera \
     hardware/google/camera \
+    hardware/google/interfaces \
     hardware/google/pixel \
     hardware/qcom/msm8998
 

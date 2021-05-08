@@ -777,6 +777,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
+# Setting vendor SPL
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true

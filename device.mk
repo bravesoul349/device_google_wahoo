@@ -762,6 +762,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.oem_unlock.pst_offset=6144 \
     ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc
 
+# IMS
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
+
 PRODUCT_HOST_PACKAGES += \
     dtc
 

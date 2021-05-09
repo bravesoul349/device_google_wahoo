@@ -806,6 +806,13 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true
 
+# Force enable voLTE, viLTE and voWIFI
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.dbg.ims_volte_enable=1 \
+	persist.dbg.volte_avail_ovr=1 \
+	persist.dbg.vt_avail_ovr=1 \
+	persist.dbg.wfc_avail_ovr=1
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.esim_cid_ignore=00000001 \

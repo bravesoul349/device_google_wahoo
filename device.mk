@@ -767,6 +767,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Enable missing props
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true
+
 PRODUCT_HOST_PACKAGES += \
     dtc
 

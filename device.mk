@@ -823,6 +823,19 @@ PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.theme=glif_v3_light \
     setupwizard.enable_assist_gesture_training=true
 
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk

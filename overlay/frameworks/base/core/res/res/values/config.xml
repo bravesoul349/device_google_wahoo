@@ -380,4 +380,6 @@
 
     <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>
+
+    <bool name="config_has_weird_dt_sensor">true</bool>
 </resources>

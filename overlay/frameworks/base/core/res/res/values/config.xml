@@ -382,4 +382,19 @@
     <integer name="config_screen_off_delay">0</integer>
 
     <bool name="config_has_weird_dt_sensor">true</bool>
+
+     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
+          carrier provisioning. If false: hard disabled. If true: then depends on carrier
+          provisioning, availability etc -->
+    <bool name="config_carrier_volte_available">true</bool>
+
+     <!-- Flag specifying whether VT should be available for carrier: independent of
+          carrier provisioning. If false: hard disabled. If true: then depends on carrier
+          provisioning, availability etc -->
+    <bool name="config_carrier_vt_available">true</bool>
+
+     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
+          carrier provisioning. If false: hard disabled. If true: then depends on carrier
+          provisioning, availability etc -->
+    <bool name="config_carrier_wfc_ims_available">true</bool>
 </resources>

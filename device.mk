@@ -799,8 +799,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
-# Setting vendor SPL
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+# Last stock security patch levels
+PLATFORM_SECURITY_PATCH := 2020-10-05
+VENDOR_SECURITY_PATCH := "2020-10-05"
 
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \

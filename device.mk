@@ -79,6 +79,7 @@ PRODUCT_SHIPPING_API_LEVEL := 26
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.adaptive.charging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.adaptive.charging.rc \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.hardware.rc:recovery/root/init.recovery.$(PRODUCT_HARDWARE).rc \
     $(LOCAL_PATH)/rootdir/etc/init.hardware.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.wahoo.usb.rc \
     $(LOCAL_PATH)/rootdir/etc/ueventd.hardware.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \

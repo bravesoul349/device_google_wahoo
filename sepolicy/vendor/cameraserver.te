@@ -12,3 +12,5 @@ dontaudit cameraserver sysfs_msm_subsys:dir search;
 dontaudit cameraserver sysfs_msm_subsys:file r_file_perms;
 
 binder_call(cameraserver, mediacodec)
+
+allow cameraserver vendor_default_prop:file r_file_perms;

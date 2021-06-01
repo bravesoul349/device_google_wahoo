@@ -8,3 +8,5 @@ allow system_app elabel_data_file:file r_file_perms;
 
 set_prop(system_app, vendor_bluetooth_prop)
 set_prop(system_app, public_vendor_system_prop)
+
+allow system_app vendor_default_prop:file r_file_perms;

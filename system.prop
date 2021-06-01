@@ -69,3 +69,9 @@ persist.data.df.dev_name=rmnet_usb0
 #ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
+
+# Wifi Display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+vendor.video.disable.ubwc=1
+debug.sf.enable_hwc_vds=1

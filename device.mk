@@ -819,6 +819,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.dbg.vt_avail_ovr=1 \
 	persist.dbg.wfc_avail_ovr=1
 
+
+PRODUCT_PACKAGES += \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
+
+# QCOM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libmediaextractorservice \
+    libstagefright_enc_common
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.esim_cid_ignore=00000001 \

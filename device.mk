@@ -860,6 +860,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+#ipacm configuration files
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk

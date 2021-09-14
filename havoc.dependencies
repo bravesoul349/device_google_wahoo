@@ -1,0 +1,27 @@
+[
+   {
+     "repository": "kernel_google_wahoo",
+     "target_path": "kernel/google/wahoo",
+     "branch":"eleven"
+   },
+   {
+     "repository": "android_hardware_qcom_audio",
+     "target_path": "hardware/qcom/audio",
+     "branch":"wahoo-11"
+   },
+   {
+     "repository": "android_hardware_qcom_msm8998",
+     "target_path": "hardware/qcom/msm8998",
+     "branch":"eleven"
+   },
+   {
+     "repository": "android_packages_apps_ElmyraService",
+     "target_path": "packages/apps/ElmyraService",
+     "branch":"rvc"
+   },
+   {
+     "repository": "android_packages_apps_NowPlayingOverlay",
+     "target_path": "packages/apps/NowPlayingOverlay",
+     "branch":"eleven"
+   }
+]

@@ -743,6 +743,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # EUICC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+    
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 
 # Build necessary packages for vendor
 PRODUCT_PACKAGES += \
